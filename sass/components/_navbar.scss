@@ -1,0 +1,25 @@
+.navbar__top{
+    @include navbar;
+    &__right{
+        border-left: .3rem solid white;
+    }
+    &__list{
+        @include mobile{
+            display: none;
+        }
+        display: flex;
+    }
+    &__item{
+        @include mobile{
+            display:none;
+        }
+
+        &__btn{
+            margin-left: 2rem;
+            &:active,&:link,&:visited{
+                color:white;
+                text-decoration: none;
+            }
+        }
+    }
+}

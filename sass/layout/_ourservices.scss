@@ -1,0 +1,53 @@
+#ourservices-page {
+    & .aboutus__navbar{
+        background-image: linear-gradient(to left, rgba(30, 106, 184, 0.7), rgba(30, 106, 184, 0.7)), url(../img/services_bg.jpg);}
+    & .nav__item a{
+        
+    }
+    & .nav__item:not(:first-of-type){
+        border-bottom: .3rem solid #e1c653;
+        color: #3d5a76;
+    }
+     & .nav__item:first-of-type{
+        border-bottom: 0;
+    }
+    & p.section__paragraph{
+        @include mobile{
+            width: 100%;
+        }
+        width: 75%;
+        margin-top:3rem;
+    }
+    & div.section__flexbox{
+        flex-direction: column;
+    }
+    & div.section__flexbox__element{
+        flex:1;
+        max-width: 78%;
+    }
+    & .ourservices__list{
+        font-size:1.6rem;
+        line-height: 3rem;
+    }
+    & .ourservices__item::before {
+        content: "•"; 
+        color: #585858;
+        display: inline-block; width: 1em;
+        margin-right: 2.2rem}
+    & .building, & .books, & .student, & .hand{
+        background-image: url(../img/services_sprite.png);
+    }
+    & .building{
+        background-position: 100% -4px;
+    }
+    & .books{
+        background-position: 67% -7px;
+    }
+    & .student{
+        background-position:34% -1px;
+    }
+    & .hand{
+        background-position: 0 0;
+    }
+        
+}

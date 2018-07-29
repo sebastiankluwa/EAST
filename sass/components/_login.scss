@@ -1,0 +1,87 @@
+/*<div class="login">
+          <img src="" alt="" class="login__avatar">
+           <h1 class="login__head">SIGN IN</h1>
+           <form action="" class="login__main">
+                <div class="login__main__username">
+                   <label for="" class="login__main__label"></label>
+                   <input type="name" class="login__main__input">
+               </div>
+               <div class="login__main__password">
+                   <label for="" class="login__main__label"></label>
+                   <input type="name" class="login__main__input">
+               </div>
+               <button class="login__main__submit">SIGN IN</button>*/
+
+
+.login{
+    background-color: rgba(255,255,255,.7);
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(150%,-50%);
+    box-shadow: 0 0 5rem rgba(0,0,0,.5);
+    
+    &__avatar{
+        position: absolute;
+        width: 5rem;
+        height: 5rem;
+        top: 6vh;
+        right: 1vw;
+        box-shadow: 2px 5px 1rem rgba(0,0,0,.4);
+        border-radius: 5rem;
+    }
+    &__head{
+        display: inline-block;
+        font-size: 2.5rem;
+        width: 100%;
+        background-color: crimson;
+        color: white;
+        margin-bottom: 5rem;
+        & h1{
+            margin: 3rem;
+        }
+    }
+    &__main{
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        &__username, &__password{}
+        &__label{
+            display: block;
+            font-size: 1.1rem;
+            text-align: left;
+            color: rgba(0,0,0,.6);
+        }
+        &__input{
+            width: 100%;
+            font-size: 1.5rem;
+            font-family: 'Tajawal', sans-serif;
+            height: 3rem;
+            border: 0;
+            border-bottom: 1px solid rgba(0,0,0,.6);;
+            margin-bottom: 1rem;
+            transition: all .3s;
+            background-color: transparent;
+            &:focus{
+                outline: none;
+                border-bottom-color: darkgreen;
+                border-bottom-width: 1.3px;
+            }
+        }
+        &__submit{
+            background-color: crimson;
+            color: white;
+            font-family: 'Tajawal', sans-serif;
+            font-size: 1.5rem;
+            width: 100%;
+            padding: 1rem 3rem;
+            border:0;
+            margin: 3rem 0 3rem;
+            cursor: pointer;
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+}

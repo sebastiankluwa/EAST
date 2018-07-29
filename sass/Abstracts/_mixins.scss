@@ -1,0 +1,74 @@
+@mixin navbar {
+    padding: 3.5rem 5.5rem;
+    flex:0;
+    &__logo{
+        display: flex;
+        flex-direction: row;
+        width:30rem;
+    }
+    &__left{
+        font-size: 3rem;
+    }
+    &__right{
+        font-size:1.7rem;
+        margin-left: 1.5rem;
+        padding-left: .5rem;
+    }
+    .menu__button{
+        display: none;
+    }
+    /*@include tablet{
+        .menu__button{
+            display: block;
+        }
+        padding: 2rem 2rem;
+        .container-fluid{
+            justify-content: flex-start;
+        }
+    &__menu{
+        margin: .3rem 3rem .3rem 0rem;
+
+        }
+    }*/
+    @include mobile{
+        .menu__button{
+            display: block;
+        }
+        padding: 2rem 2rem;
+        .container-fluid{
+            justify-content: flex-start;
+        }
+    &__menu{
+        margin: .3rem 3rem .3rem 0rem;
+
+        }
+       
+    
+    }
+    
+    
+}
+
+@mixin mobile {
+  @media (min-width: $mobile-width) and (max-width: $tablet-width - 1px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+@mixin tablet2 {
+  @media (min-width: #{$tablet-width2}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}

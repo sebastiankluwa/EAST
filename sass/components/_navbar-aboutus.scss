@@ -1,0 +1,32 @@
+.aboutus__navbar{
+    @include navbar;
+    @include mobile{
+        padding: 2rem 4rem;
+    }
+    @include tablet{
+        padding: 2rem 4rem;
+    }
+    background-image: linear-gradient(to left, rgba(30,106,184,.8), rgba(30,106,184,.8)),url(../img/about_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    color:white;
+        
+    &__right{
+        border-left: .3rem solid white;
+    }
+    &__phone{
+        @include mobile{
+            display: none;
+        }
+        display: inline-block;
+        padding-left: 3rem;
+        background-image: url(../img/phonereverse.png);
+        background-repeat: no-repeat;
+        background-position: 5% 40%; 
+        padding: .6rem 4rem;
+    }
+    &__logo{
+        cursor:pointer;
+        text-decoration: none;
+    }
+}

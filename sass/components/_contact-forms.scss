@@ -1,0 +1,71 @@
+.contact-forms{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.contact-form{
+    @include mobile{
+        flex: 1 1 500px;
+    }
+    @include tablet{
+        flex: 1 1 500px;
+    }
+    padding: 1.5rem 4rem;
+    display: flex;
+    flex-direction: row;
+    flex:1 1 100px;
+    border: solid 2px #f1f1f1; 
+    justify-content: space-around;
+    color: #585858;
+    &__text{
+        font-size: 1.8rem;
+        flex: 1;
+    }
+    &__span{
+        flex:.78;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    &__laptop, &__human, &__gps{
+        //flex: 0 0 6rem;
+        height: 4rem;
+        width: 4rem;
+        background-image: url(../img/aboutus_sprite.png);
+        background-repeat: no-repeat;
+        background-size:540%;
+    }
+    &__laptop{
+        background-position: 0 110%;
+    }
+    &__human{
+        background-position: 24% 110%;
+    }
+     &__gps{
+        background-position: 45% 110%;
+    }
+    &:first-child{
+        @include mobile{
+            border: solid 2px #f1f1f1; 
+            border-bottom: 0;
+        }
+        @include tablet{
+            border: solid 2px #f1f1f1; 
+            border-bottom: 0;
+        }
+        border-right: 0;
+    }
+    &:last-child{
+        @include mobile{
+            border: solid 2px #f1f1f1; 
+            border-top: 0;
+        }
+        @include tablet{
+            border: solid 2px #f1f1f1; 
+            border-top: 0;
+        }
+        border-left: 0;
+    }
+
+}

@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i');
+body,html{
+    font-size:62.5%;
+    font-family: 'PT Serif', serif;
+    @include mobile{
+        font-size: 55%;
+        height: auto;
+    }
+    @include tablet2{
+        height: auto;
+    }
+}
+

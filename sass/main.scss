@@ -1,0 +1,22 @@
+﻿@import "Abstracts/variables";
+@import "Abstracts/mixins";
+@import "Abstracts/functions";
+
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+@import "base/animations";
+
+@import "components/bookmarks";
+@import "components/navbar";
+@import "components/navbar-aboutus";
+@import "components/contact-forms";
+@import "components/contact";
+@import "components/footer";
+@import "components/mobile__menu";
+
+@import "layout/home";
+@import "layout/Aboutus";
+@import "layout/ourservices";
+
+

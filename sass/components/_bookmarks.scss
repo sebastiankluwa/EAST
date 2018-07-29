@@ -1,0 +1,59 @@
+.bookmarks{
+    @include tablet2{
+        flex:2;
+    }
+    flex:2.5;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(255,255,255);
+    color:rgb(61,90,118);
+    position: relative;
+}
+.bookmark{
+    @include mobile{
+        padding: 4rem;
+    }
+    display: flex;
+    flex-direction: column;
+    flex:1 1 200px;
+    padding: 8rem;
+    justify-content: space-around;
+    &__icon{
+        position: absolute;
+        top:0;
+        right: 5%;
+    }
+    &__title{
+        font-size: 3.5rem;
+    }
+    &__text{
+        @include mobile{
+            margin: 2rem 0;
+        }
+        @include tablet{
+            margin: 2rem 0;
+        }
+        font-size: 1.6rem;
+        line-height: 3rem;
+        color:#7491ad;
+    }
+    &__down{
+        margin-bottom: 4rem;
+    }
+    &__btn{
+        border: 1px solid #cfe0f2;
+        padding: .9rem 1.1rem;
+        text-decoration: none;
+        display: inline-block;
+        &:link,&:active{
+           color:#7491ad;
+        }
+        &:visited{
+            color:#7491ad;
+        }
+    }
+    &:nth-child(2){
+        box-shadow: 0 0 7rem rgba(0,0,0,.2);
+    }
+}

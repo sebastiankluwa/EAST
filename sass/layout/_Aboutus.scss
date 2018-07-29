@@ -1,0 +1,198 @@
+.aboutus{
+    font-size:2rem;
+    height: 100vh;
+}
+.aboutus__body{
+    display: flex;
+    flex-direction: row;
+}
+.aboutus__aside{
+    background-color: #fbfbfb;
+    border-right: 1px solid #ebebeb;
+    flex: 1;
+}
+.aboutus__main{
+    flex:6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+}
+.aboutus__heading{
+    @include mobile{
+        margin-bottom: 2.5rem;
+    }
+    @include tablet{
+        margin-bottom: 2.5rem;
+    }
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    flex:1;
+    color: #3d5a76;
+        font-size: 3rem;
+        width: 65%;
+        line-height: 4.5rem;
+        &::after{
+            content: "";
+            display: block;
+            width: 6rem;
+            height: .4rem;
+            margin-top: 0;
+            background-color: #e1c653;
+        }
+}
+.aboutus__navbar__logo{
+        cursor:pointer;
+    }
+.container-fluid a:link,.container-fluid a:visited{
+        color:white;
+        text-decoration:none;
+    }
+.section{
+    padding-top: 4rem;
+    padding-bottom: 7rem;
+    &__p{
+        color:#585858;
+        font-size: 1.6rem;
+        line-height: 3rem;
+        padding-left: 3rem;
+        //width: 80%;
+        //display: inline-block;
+    }
+    &__flexbox{
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+    }
+    &__flexbox__element{
+        @include mobile{
+            padding-right: 0;
+        }
+        flex:1 1 35rem;
+        display: flex;
+        flex-direction: row;
+        margin-top: 5rem;
+        padding-right: 5rem;
+    }
+    &__paragraph{
+        @include mobile{
+            width: 100%;
+            margin-top: 2rem;
+        }
+        font-size: 1.6rem;
+        width: 65%;
+        line-height: 3rem;
+        
+    }
+}
+.mobile{
+    display:none;
+    @include mobile{
+        display:block;
+    }
+}
+.building,.books,.student,.hand{
+    height: 6rem;
+    width: 6rem;
+    background-image: url(../img/aboutus_sprite.png);
+    background-repeat: no-repeat;
+    background-size:450%;
+    flex: 0 0 6rem;
+    margin: auto 0;
+    //display: inline-block;
+}
+.books{
+    background-position: 100% 10%;
+}
+.student{
+    background-position: 33% 0%;
+}
+.hand{
+    background-position: 68% 10%;
+}
+.section:not(:last-of-type){
+    @include mobile{
+        border-bottom:0;
+    }
+   border-bottom: solid 2px #f1f1f1; 
+}
+
+.clock{
+    background-image: url(../img/clock.png);
+    background-repeat: no-repeat;
+    background-position: 3% 10%;
+}
+.gps{
+   background-image: url(../img/gps.png);
+    background-repeat: no-repeat;
+    background-position: 3% 10%; 
+}
+.phonebox{
+    /*background-image: url(../img/phone.png);
+    background-repeat: no-repeat;
+    background-position: 3% 10%;*/
+    font-size: 1.6rem;
+    flex:1 1 5px;
+    line-height: 3rem;
+}
+.phone{
+    background-image: url(../img/phone.png);
+    background-repeat: no-repeat;
+    background-position: 3% 45%; 
+    padding: 0 4rem;
+    @include mobile{
+        margin-bottom: 2rem;}
+}
+.mail{
+   background-image: url(../img/mail.png);
+    background-repeat: no-repeat;
+    background-position: 3% 50%; 
+    padding: 0 4rem;
+}
+
+
+.nav__items{
+    top:15rem;
+    right:0;
+    position: absolute; 
+}
+.nav__item{
+    color:#606060;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    padding-right: 3rem;
+    @include tablet2{
+        padding-right:2rem;
+    }
+    &:not(:last-of-type){
+        border-bottom: .3rem solid #e1c653;
+        color: #3d5a76;
+    }
+    a{
+        text-decoration: none;
+        color:#606060;
+    }
+}
+.aboutus__aside{
+    position: relative;
+    @include tablet{
+        display: none;
+    }
+    @include mobile{
+        display: none;
+    }
+}
+.aside__media{
+    min-width: 10rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 5%;
+    right: 50%;
+    transform: translate(50%,0);
+    &__link{
+        flex:1;
+    }
+}
